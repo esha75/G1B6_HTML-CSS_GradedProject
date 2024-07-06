@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Text</title>
+    <link rel="icon" type="image/x-icon" href="Images/Icon/th.jpg">
+    <link rel="stylesheet" type="text/css" href="css/labtest.css">
+</head>
+
+<body>
+    <form action="">
+        <section class="outer">
+            <div class="left">
+                <div id='details'>
+                    <article class='textin'>
+                        <h4>1. Your Contact Details</h4>
+                        <input type="text" name="full_name" placeholder="Full Name" required="True">
+                        <input type="text" name="id" placeholder="Patient Id If Exists">
+                        <input type="text" name="cont_num" placeholder="Contact Number" required>
+                        <input type="text" name="email" placeholder="Email Id">
+                    </article>
+
+                    <article class='textin'>
+                        <h4>2. Address</h4>
+                        <input type="text" name="house-no" placeholder="House Number" required>
+                        <input type="text" name="street" placeholder="Street" required>
+                        <input type="text" name="area" placeholder="Area" required><br/>
+                        <p id="address_district">District  </p>
+                        <select name="District" id="District" required>
+                            <option value="">Choose Your District</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Gonda">Gonda</option>
+                            <option value="Agra">Agra</option>
+                            <option value="Greater Noida">Greater Noida</option>
+                        </select>
+                    </article>
+                    <article>
+                        <h4>3. Choose the Test type</h4>
+                        <p id="Message">"Check atleast one box without fill"</p>
+                        <input type="checkbox" id="c1" name="option1" value="CBC">
+                        <label for="c1">CBC</label>
+                        <br>
+                        <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                        <label for="c2">Complete Urine</label>
+                        <br>
+                        <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                        <label for="c3">Lipid Profile</label>
+                        <br>
+                        <input type="checkbox" id="c4" name="option4" value="TSH">
+                        <label for="c3">Thyroid Stimulating Hormone(TSH)</label>
+                        <br>
+                        <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                        <label for="c1">Glucose Test</label>
+                    </article>
+
+                    <article>
+                        <h4>4. Do you want a hard copy of the report also?</h4>
+                        <input type="radio" id="c6" name="option" value="True">
+                        <label for="c6">Yes</label>
+                        <br>
+                        <input type="radio" id="c7" name="option" value="False">
+                        <label for="c7">No</label>
+                    </article>
+
+                    <article>
+                        <h4>5. Select Your Comfortable Date and Time</h4>
+                        <input type="datetime-local" value="datetime-local" required>
+                    </article>
+                </div>
+
+            </div>
+            <div class="right">
+                <img src="Images/Lab-Test/lab-test.jpg" alt="Testing">
+            </div>
+        </section>
+        <div class="row">
+            <div id='btns'>
+                <button type="reset">RESET</button>
+                <button type="submit">SUBMIT</button>
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
